@@ -40,7 +40,7 @@
 
 -(void) setTimer {
 	secondsCount = 90;
-	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:NO];
+	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
 }
 /*
 #pragma mark - Navigation
