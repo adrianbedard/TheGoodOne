@@ -14,6 +14,8 @@
 		9C6F559E19F2F7F600EC5397 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C6F559D19F2F7F600EC5397 /* Images.xcassets */; };
 		9C6F55A119F2F7F600EC5397 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C6F559F19F2F7F600EC5397 /* LaunchScreen.xib */; };
 		9C6F55AD19F2F7F700EC5397 /* PurpleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55AC19F2F7F700EC5397 /* PurpleTests.m */; };
+		9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55EC19F310CA00EC5397 /* LoadingVC.m */; };
+		9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55EF19F3111800EC5397 /* TalkingVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		9C6F55A619F2F7F700EC5397 /* PurpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F55AB19F2F7F700EC5397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6F55AC19F2F7F700EC5397 /* PurpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurpleTests.m; sourceTree = "<group>"; };
+		9C6F55EB19F310CA00EC5397 /* LoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingVC.h; path = VCs/LoadingVC.h; sourceTree = "<group>"; };
+		9C6F55EC19F310CA00EC5397 /* LoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoadingVC.m; path = VCs/LoadingVC.m; sourceTree = "<group>"; };
+		9C6F55EE19F3111800EC5397 /* TalkingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TalkingVC.h; path = VCs/TalkingVC.h; sourceTree = "<group>"; };
+		9C6F55EF19F3111800EC5397 /* TalkingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TalkingVC.m; path = VCs/TalkingVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				9C6F559519F2F7F600EC5397 /* AppDelegate.m */,
 				9C6F559719F2F7F600EC5397 /* ViewController.h */,
 				9C6F559819F2F7F600EC5397 /* ViewController.m */,
+				9C6F55EB19F310CA00EC5397 /* LoadingVC.h */,
+				9C6F55EC19F310CA00EC5397 /* LoadingVC.m */,
+				9C6F55EE19F3111800EC5397 /* TalkingVC.h */,
+				9C6F55EF19F3111800EC5397 /* TalkingVC.m */,
 				9C6F559A19F2F7F600EC5397 /* Main.storyboard */,
 				9C6F559D19F2F7F600EC5397 /* Images.xcassets */,
 				9C6F559F19F2F7F600EC5397 /* LaunchScreen.xib */,
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */,
+				9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */,
+				9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */,
 				9C6F559619F2F7F600EC5397 /* AppDelegate.m in Sources */,
 				9C6F559319F2F7F600EC5397 /* main.m in Sources */,
 			);
@@ -412,6 +424,7 @@
 				9C6F55B219F2F7F700EC5397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9C6F55B319F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "PurpleTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +433,7 @@
 				9C6F55B519F2F7F700EC5397 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
