@@ -22,6 +22,7 @@ int main(int argc, char * argv[]) {
     id<SINClient> sinchClient = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
                                               applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
                                                 environmentHost:@"sandbox.sinch.com"
-                                                         userId:@"<user id>"];
+                                                         userId:@"<userid>"];
+    
 
 }
