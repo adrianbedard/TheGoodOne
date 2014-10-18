@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	
+	[self setTimer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,8 +26,21 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void) timerRun {
+	secondsCount -= 1;
+	int seconds = secondsCount;
+	NSString *timerOutput = [NSString stringWithFormat:@"%2d", seconds];
+	countdownLabel.text = timerOutput;
+	
+	if (secondsCount == 0) {
+		[countdownTimer invalidate];
+		countdownTimer = nil;
+	}
+}
+
 -(void) setTimer {
-	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:90 target:self selector:<#(SEL)#> userInfo:<#(id)#> repeats:<#(BOOL)#>]
+	secondsCount = 90;
+	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:NO];
 }
 /*
 #pragma mark - Navigation

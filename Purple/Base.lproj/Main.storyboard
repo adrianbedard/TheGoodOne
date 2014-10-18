@@ -188,7 +188,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="Timer" destination="jan-v5-GpQ" id="HAP-nU-7tb"/>
+                        <outlet property="countdownLabel" destination="jan-v5-GpQ" id="3rp-ZK-CjZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjY-QF-qEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
