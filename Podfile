@@ -1,2 +1,3 @@
 pod 'SinchRTC'
+pod 'PubNub'
 
