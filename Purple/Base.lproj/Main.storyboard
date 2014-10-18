@@ -3,12 +3,13 @@
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="beeeee" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="beeeee" title="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UU2-3x-tOp"/>
                         <viewControllerLayoutGuide type="bottom" id="DgC-RQ-hgr"/>
@@ -58,7 +59,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="connect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qsw-9m-XLv"/>
-                                    <segue destination="wyG-rZ-HK0" kind="presentation" id="C6h-ZJ-X3E"/>
+                                    <segue destination="wyG-rZ-HK0" kind="presentation" animates="NO" id="C6h-ZJ-X3E"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,13 +98,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY7-Wp-Dce">
+                                <rect key="frame" x="16" y="28" width="35" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="BMP-qI-tdd"/>
+                                    <constraint firstAttribute="height" constant="30" id="vDK-Bv-jQ6"/>
+                                </constraints>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" animates="NO" id="VxS-BR-TEv"/>
+                                </connections>
+                            </button>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="C9F-Nt-XX9">
                                 <rect key="frame" x="177" y="305" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="Y3N-ob-hNo"/>
                                     <constraint firstAttribute="width" constant="20" id="fQ7-Vq-93t"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="qIk-Zb-LP3"/>
                                 </constraints>
                             </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tt1-MS-FVP">
+                                <rect key="frame" x="159" y="353" width="56" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="56" id="CYg-p0-gfj"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="bFg-nd-2Ao"/>
+                                    <constraint firstAttribute="width" constant="56" id="ea4-4c-Nt2"/>
+                                    <constraint firstAttribute="height" constant="30" id="sr5-bd-giG"/>
+                                </constraints>
+                                <state key="normal" title="Loading">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ah8-ls-I4A" kind="presentation" animates="NO" id="I0N-If-OVL"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLb-Zx-L3S">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.91372555489999996" green="0.2823529541" blue="0.43137258290000002" alpha="1" colorSpace="deviceRGB"/>
@@ -114,26 +144,18 @@
                                     <rect key="frame" x="103" y="156" width="164" height="147"/>
                                 </variation>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LY7-Wp-Dce">
-                                <rect key="frame" x="164" y="229" width="56" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="erq-XA-Xao"/>
-                                    <constraint firstAttribute="width" constant="56" id="rMw-KY-cRE"/>
-                                </constraints>
-                                <state key="normal" title="Loading">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Ah8-ls-I4A" kind="presentation" id="lLK-8V-bNB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="C9F-Nt-XX9" secondAttribute="centerY" id="9Ae-DS-PPx"/>
-                            <constraint firstAttribute="centerX" secondItem="LY7-Wp-Dce" secondAttribute="centerX" id="Mvl-kD-Mw5"/>
+                            <constraint firstAttribute="centerX" secondItem="Tt1-MS-FVP" secondAttribute="centerX" id="AG9-Vd-Bkq"/>
+                            <constraint firstItem="LY7-Wp-Dce" firstAttribute="top" secondItem="NrF-Ga-Q4h" secondAttribute="bottom" constant="8" id="DEQ-98-S7H"/>
+                            <constraint firstAttribute="centerY" secondItem="C9F-Nt-XX9" secondAttribute="centerY" id="MVQ-2N-YL2"/>
+                            <constraint firstItem="C9F-Nt-XX9" firstAttribute="centerX" secondItem="Tt1-MS-FVP" secondAttribute="centerX" id="O8P-aP-boS"/>
+                            <constraint firstAttribute="centerX" secondItem="C9F-Nt-XX9" secondAttribute="centerX" id="TIM-ce-4mV"/>
+                            <constraint firstItem="Tt1-MS-FVP" firstAttribute="top" secondItem="C9F-Nt-XX9" secondAttribute="bottom" constant="28" id="Z7P-jc-1mI"/>
                             <constraint firstAttribute="centerX" secondItem="C9F-Nt-XX9" secondAttribute="centerX" id="kSI-9N-VX5"/>
-                            <constraint firstItem="C9F-Nt-XX9" firstAttribute="top" secondItem="LY7-Wp-Dce" secondAttribute="bottom" constant="46" id="muZ-2c-UN9"/>
+                            <constraint firstItem="LY7-Wp-Dce" firstAttribute="leading" secondItem="L14-7n-5ww" secondAttribute="leadingMargin" constant="10" id="sMg-Lg-22w"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -163,29 +185,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwS-Tm-KjI">
-                                <rect key="frame" x="170" y="521" width="35" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhV-2n-V62">
+                                <rect key="frame" x="294" y="33" width="43" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jan-v5-GpQ">
+                                <rect key="frame" x="345" y="33" width="20" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="WLq-Ey-6kL"/>
+                                    <constraint firstAttribute="height" constant="31" id="gFg-CF-syc"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="gqZ-vC-TnA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="xzX-Yw-jaC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8X-u4-Oon">
+                                <rect key="frame" x="107" y="446" width="35" height="30"/>
                                 <state key="normal" title="Back">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="7Sm-iH-X7h"/>
+                                    <segue destination="wyG-rZ-HK0" kind="presentation" identifier="BackToLoad" animates="NO" id="EY9-v9-eax"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhV-2n-V62">
-                                <rect key="frame" x="166" y="222" width="38" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jan-v5-GpQ">
-                                <rect key="frame" x="128" y="323" width="20" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5we-wr-Lbj">
+                                <rect key="frame" x="138" y="541" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6cB-N7-b02"/>
+                                    <constraint firstAttribute="width" constant="98" id="DOb-08-EET"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="Pd2-fj-dge"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="30" id="TOi-sZ-2Xf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="98" id="et7-Pr-OwH"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="98" id="qu7-4c-XF0"/>
+                                </constraints>
+                                <state key="normal" title="Abandon Ship">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" animates="NO" id="qzc-pr-MdH"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="5we-wr-Lbj" secondAttribute="centerX" id="8Ju-Qf-eF1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jan-v5-GpQ" secondAttribute="trailing" constant="-6" id="G3K-Df-mKf"/>
+                            <constraint firstItem="2aY-c2-2Pb" firstAttribute="top" secondItem="5we-wr-Lbj" secondAttribute="bottom" constant="100" id="GWC-Px-Yvq"/>
+                            <constraint firstItem="2aY-c2-2Pb" firstAttribute="top" secondItem="5we-wr-Lbj" secondAttribute="bottom" constant="114" id="R2f-n1-u0C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jan-v5-GpQ" secondAttribute="trailing" constant="8" id="RIS-QA-I5G"/>
+                            <constraint firstAttribute="centerX" secondItem="5we-wr-Lbj" secondAttribute="centerX" id="RQN-iF-Qn6"/>
+                            <constraint firstItem="2aY-c2-2Pb" firstAttribute="top" secondItem="5we-wr-Lbj" secondAttribute="bottom" constant="100" id="V9C-5H-wwk"/>
+                            <constraint firstItem="jan-v5-GpQ" firstAttribute="leading" secondItem="uhV-2n-V62" secondAttribute="trailing" constant="8" id="YtY-S7-z4X"/>
+                            <constraint firstItem="jan-v5-GpQ" firstAttribute="top" secondItem="Qdc-eO-gqf" secondAttribute="bottom" constant="13" id="hYR-IA-6bk"/>
+                            <constraint firstItem="uhV-2n-V62" firstAttribute="height" secondItem="jan-v5-GpQ" secondAttribute="height" id="qko-pG-n1g"/>
+                            <constraint firstItem="uhV-2n-V62" firstAttribute="top" secondItem="Qdc-eO-gqf" secondAttribute="bottom" constant="13" id="rbC-rh-EDa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jan-v5-GpQ" secondAttribute="trailing" constant="-6" id="vxd-JY-ssK"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="countdownLabel" destination="jan-v5-GpQ" id="3rp-ZK-CjZ"/>
@@ -196,4 +255,8 @@
             <point key="canvasLocation" x="832" y="814"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="VxS-BR-TEv"/>
+        <segue reference="C6h-ZJ-X3E"/>
+    </inferredMetricsTieBreakers>
 </document>
