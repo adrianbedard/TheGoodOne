@@ -7,7 +7,7 @@
 //
 
 #import "TalkingVC.h"
-
+#import <Sinch/Sinch.h>
 @interface TalkingVC ()
 
 
@@ -36,6 +36,22 @@
 		[countdownTimer invalidate];
 		countdownTimer = nil;
 	}
+    
+    
+    //Sinch connection here?
+    // Instantiate a Sinch client object
+    /*
+    id<SINClient> sinchClient = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
+                                              applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
+                                                environmentHost:@"sandbox.sinch.com"
+                                                         userId:@"<userid>"];
+    [sinchClient setSupportCalling:YES];
+    [sinchClient setSupportActiveConnectionInBackground:YES];
+    sinchClient.delegate = ... ;
+    [sinchClient start];
+    [sinchClient startListeningOnActiveConnection];*/
+
+    
 }
 
 -(void) setTimer {
