@@ -30,17 +30,14 @@
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
     
-    [PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
-    [PubNub connect];
+    //[PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
+    //[PubNub connect];
     
     //Define a channel
-    PNChannel *channel_1 = [PNChannel channelWithName:@"Lobby" shouldObservePresence:YES];
+    //PNChannel *channel_1 = [PNChannel channelWithName:@"Lobby" shouldObservePresence:YES];
     
     //Subscribe to the channel
-    [PubNub subscribeOnChannel:channel_1];
-    
-    //Publish on the channel
-    [PubNub sendMessage:@"Hello from PubNub iOS!" toChannel:channel_1];
+    //[PubNub subscribeOnChannel:channel_1];
 }
 
 @end

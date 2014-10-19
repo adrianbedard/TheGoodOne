@@ -18,7 +18,7 @@
 @end
 
 @implementation CallScreenViewController
-@synthesize username, remoteUsername, callButton;
+@synthesize username, remoteUsername, callButton, callname;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,9 +29,11 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    username = [self generateRandomString:20];
     [self initSinchClient];
     // Do any additional setup after loading the view.
 }
@@ -41,6 +43,21 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//before you click connect
+//generate user ID rand fuction
+
+//when you click connect
+//if a channel does not exist, create it
+//once u create channel, join it with your unique ID
+//if a channel does exist, join it with your unique ID
+
+//If number of people in channel >= 2
+//return list of ID sessions
+//choose first ID != self, remeber that ID
+//take in other ID as argument to sinch
+//wait until other process takes in your id
+//when both ID's have been taken in, queue chat.
 
 +(NSString*)generateRandomString:(int)num {
     NSMutableString* string = [NSMutableString stringWithCapacity:num];
