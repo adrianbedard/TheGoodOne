@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="D4x-qu-kpx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="410.25" y="-8.5"/>
         </scene>
-        <!--TestVC-->
+        <!--Login View Controller-->
         <scene sceneID="Fw6-v1-sUE">
             <objects>
-                <viewController id="D4x-qu-kpx" customClass="TestVC" sceneMemberID="viewController">
+                <viewController id="D4x-qu-kpx" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8kg-EC-f1j"/>
                         <viewControllerLayoutGuide type="bottom" id="f7T-ym-L39"/>
@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="-109.5" y="-751"/>
         </scene>
-        <!--Test2VC-->
+        <!--Call Screen View Controller-->
         <scene sceneID="Yt9-TH-ytB">
             <objects>
-                <viewController id="sS0-od-lev" customClass="Test2VC" sceneMemberID="viewController">
+                <viewController id="sS0-od-lev" customClass="CallScreenViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QaX-Ve-UMo"/>
                         <viewControllerLayoutGuide type="bottom" id="SoP-IG-OVK"/>
