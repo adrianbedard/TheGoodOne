@@ -51,7 +51,13 @@
     [sinchClient start];
     [sinchClient startListeningOnActiveConnection];
      
+     //stop listening
      -[SINClient stopListeningOnActiveConnection]
+     
+     [sinchClient stopListeningOnActiveConnection];
+     [sinchClient terminate];
+     [sinchClient release]; // unless using ARC
+     sinchClient = nil;
      
      
      
