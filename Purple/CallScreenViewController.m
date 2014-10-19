@@ -33,7 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    *username = [self generateRandomString]
+    username = [self generateRandomString:20];
     [self initSinchClient];
     // Do any additional setup after loading the view.
 }
