@@ -20,6 +20,7 @@
 		9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55EC19F310CA00EC5397 /* LoadingVC.m */; };
 		9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55EF19F3111800EC5397 /* TalkingVC.m */; };
 		9C6F55F219F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C6F55F119F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif */; };
+		9CAB4E2619F383C900F14B35 /* PNImports.h in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB4E2519F382D500F14B35 /* PNImports.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -314,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CAB4E2619F383C900F14B35 /* PNImports.h in Sources */,
 				9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */,
 				9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */,
 				9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */,

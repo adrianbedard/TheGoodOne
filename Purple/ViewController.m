@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <PNImports.h>
+#import "PNImports.h"
 #import "PNMessage+Protected.h"
 
 @interface ViewController ()
