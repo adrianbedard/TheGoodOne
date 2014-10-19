@@ -33,7 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    username = [self generateRandomString:20];
+	username = [self generateRandomString:20];
+	callname = [self generateRandomString:20];
+	[self setTimer];
     [self initSinchClient];
     // Do any additional setup after loading the view.
 }
@@ -68,8 +70,8 @@
 }
 
 - (void)initSinchClient {
-    NSString *key = @"d";
-    _client = [Sinch clientWithApplicationKey:key
+		// NSString *key = @"d";
+    _client = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
                             applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
                               environmentHost:@"sandbox.sinch.com"
                                        userId:self.username];
@@ -93,7 +95,7 @@
 - (IBAction)callUser:(id)sender {
     if (_call == nil)
     {
-        _call = [_client.callClient callUserWithId:self.remoteUsername.text];
+        _call = [_client.callClient callUserWithId:callname];
         _call.delegate = self;
     }
     else
@@ -103,6 +105,12 @@
     }
 }
 
+- (IBAction)Exit:(id)sender {
+	_call = nil;
+	callname = nil;
+	username = nil;
+	[self performSegueWithIdentifier:@"ToHome" sender:self];
+}
 
 -(void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
     //for now we are just going to answer calls,
@@ -120,16 +128,38 @@
 
 - (void)callDidEstablish:(id<SINCall>)call {
     //Called when a call connects.
-     [self.callButton setTitle:@"Hang up" forState:UIControlStateNormal];
+	// [self.callButton setTitle:@"Hang up" forState:UIControlStateNormal];
 }
 
 - (void)callDidEnd:(id<SINCall>)call {
     //called when call finnished.
     [self.callButton setTitle:@"Call" forState:UIControlStateNormal];
     _call = nil;
+	callname = nil;
+	username = nil;
+	[self performSegueWithIdentifier:@"BackToLoad" sender:self];
 
 }
 
+-(void) timerRun {
+	secondsCount -= 1;
+	int seconds = secondsCount;
+	NSString *timerOutput = [NSString stringWithFormat:@"%2d", seconds];
+	countdownLabel.text = timerOutput;
+	
+	if (secondsCount == 0) {
+		[countdownTimer invalidate];
+		countdownTimer = nil;
+		_call = nil;
+		callname = nil;
+		username = nil;
+		[self performSegueWithIdentifier:@"BackToLoad" sender:self];
+	}
+}
 
+-(void) setTimer {
+	secondsCount = 15;
+	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
+}
 
 @end

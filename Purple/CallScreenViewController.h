@@ -10,7 +10,12 @@
 #import <Sinch/Sinch.h>
 
 @interface CallScreenViewController : UIViewController <SINCallClientDelegate, SINCallDelegate>
-
+{
+	
+IBOutlet UILabel *countdownLabel;
+NSTimer *countdownTimer;
+int secondsCount;
+}
 - (IBAction)callUser:(id)sender;
 @property (strong, nonatomic) IBOutlet UITextField *remoteUsername;
 @property NSString* username;
