@@ -35,6 +35,7 @@
 	if (secondsCount == 0) {
 		[countdownTimer invalidate];
 		countdownTimer = nil;
+		[self performSegueWithIdentifier:@"BackToLoad" sender:self];
 	}
     
     
@@ -49,13 +50,25 @@
     [sinchClient setSupportActiveConnectionInBackground:YES];
     sinchClient.delegate = ... ;
     [sinchClient start];
-    [sinchClient startListeningOnActiveConnection];*/
+    [sinchClient startListeningOnActiveConnection];
+     
+     //stop listening
+     -[SINClient stopListeningOnActiveConnection]
+     
+     [sinchClient stopListeningOnActiveConnection];
+     [sinchClient terminate];
+     [sinchClient release]; // unless using ARC
+     sinchClient = nil;
+     
+     
+     
+     */
 
     
 }
 
 -(void) setTimer {
-	secondsCount = 90;
+	secondsCount = 5;
 	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
 }
 /*
