@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0EA38FE4F30BC8299F662E46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FE1D9386EEEE1D56C655E3 /* libPods.a */; };
-		9C670B1919F3457700F87352 /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C670B1819F3457700F87352 /* TestVC.m */; };
-		9C670B1C19F3470600F87352 /* Test2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C670B1B19F3470600F87352 /* Test2VC.m */; };
-		9C670B1E19F36AC600F87352 /* Parlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C670B1D19F36AC600F87352 /* Parlay.png */; };
+		6DDF14D519F35F5D00888DCD /* CallScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */; };
+		6DDF14D819F35F6A00888DCD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF14D719F35F6A00888DCD /* LoginViewController.m */; };
 		9C6F559319F2F7F600EC5397 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F559219F2F7F600EC5397 /* main.m */; };
 		9C6F559619F2F7F600EC5397 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F559519F2F7F600EC5397 /* AppDelegate.m */; };
 		9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F559819F2F7F600EC5397 /* ViewController.m */; };
