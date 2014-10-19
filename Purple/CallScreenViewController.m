@@ -7,7 +7,7 @@
 //
 
 #import "CallScreenViewController.h"
-#
+#import "LoginViewController.h"
 
 @interface CallScreenViewController ()
 {
@@ -46,21 +46,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-//before you click connect
-//generate user ID rand fuction
-
-//when you click connect
-//if a channel does not exist, create it
-//once u create channel, join it with your unique ID
-//if a channel does exist, join it with your unique ID
-
-//If number of people in channel >= 2
-//return list of ID sessions
-//choose first ID != self, remeber that ID
-//take in other ID as argument to sinch
-//wait until other process takes in your id
-//when both ID's have been taken in, queue chat.
-
 -(NSString*)generateRandomString:(int)num {
     NSMutableString* string = [NSMutableString stringWithCapacity:num];
     for (int i = 0; i < num; i++) {
@@ -80,6 +65,7 @@
     [_client setSupportCalling:YES];
     [_client start];
     [_client startListeningOnActiveConnection];
+    isInCall = YES;
 }
 /*
 #pragma mark - Navigation

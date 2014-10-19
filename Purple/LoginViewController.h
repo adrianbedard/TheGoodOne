@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CallScreenViewController.h"
+
+
 @interface LoginViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UITextField *username;
+//@property (strong, nonatomic) IBOutlet UITextField *username;
+@property BOOL isInCall;
+@property NSString *username;
+@property NSString *callname;
 - (IBAction)login:(id)sender;
 
 @end
