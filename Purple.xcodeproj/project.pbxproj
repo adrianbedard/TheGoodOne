@@ -63,6 +63,7 @@
 		9C6F55EE19F3111800EC5397 /* TalkingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TalkingVC.h; path = VCs/TalkingVC.h; sourceTree = "<group>"; };
 		9C6F55EF19F3111800EC5397 /* TalkingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TalkingVC.m; path = VCs/TalkingVC.m; sourceTree = "<group>"; };
 		9C6F55F119F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = picasion.com_eb8093563732c35145a5dfd6739af5e6.gif; path = Images.xcassets/picasion.com_eb8093563732c35145a5dfd6739af5e6.gif; sourceTree = "<group>"; };
+		9CAB4E2519F382D500F14B35 /* PNImports.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNImports.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +128,7 @@
 				6DDF14D319F35F5D00888DCD /* CallScreenViewController.h */,
 				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				6DDF14D619F35F6A00888DCD /* LoginViewController.h */,
+				9CAB4E2519F382D500F14B35 /* PNImports.h */,
 				6DDF14D719F35F6A00888DCD /* LoginViewController.m */,
 				9C6F559419F2F7F600EC5397 /* AppDelegate.h */,
 				9C6F559519F2F7F600EC5397 /* AppDelegate.m */,
@@ -261,7 +263,6 @@
 				9C6F559C19F2F7F600EC5397 /* Main.storyboard in Resources */,
 				9C6F55F219F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif in Resources */,
 				9C6F55A119F2F7F600EC5397 /* LaunchScreen.xib in Resources */,
-				9C670B1E19F36AC600F87352 /* Parlay.png in Resources */,
 				9C6F559E19F2F7F600EC5397 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +379,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Blake T (CEXCT5FD45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Blake T (CEXCT5FD45)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -398,6 +400,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "93f320ee-ebbb-474a-bdbb-8c75d4a0f85a";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -419,7 +422,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Blake T (CEXCT5FD45)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Blake T (CEXCT5FD45)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -432,6 +436,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "93f320ee-ebbb-474a-bdbb-8c75d4a0f85a";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -442,6 +447,7 @@
 			baseConfigurationReference = 98865B3252F99C7C8EA0AA30 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Blake T (CEXCT5FD45)";
 				INFOPLIST_FILE = Purple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -453,6 +459,7 @@
 			baseConfigurationReference = 2D567733709837B8402A3632 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Blake T (CEXCT5FD45)";
 				INFOPLIST_FILE = Purple/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
