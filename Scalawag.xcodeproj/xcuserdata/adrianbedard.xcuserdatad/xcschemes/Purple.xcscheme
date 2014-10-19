@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C6F558C19F2F7F600EC5397"
-               BuildableName = "Purple.app"
-               BlueprintName = "Purple"
-               ReferencedContainer = "container:Purple.xcodeproj">
+               BuildableName = "Scalawag.app"
+               BlueprintName = "Scalawag"
+               ReferencedContainer = "container:Scalawag.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C6F55A519F2F7F700EC5397"
-               BuildableName = "PurpleTests.xctest"
-               BlueprintName = "PurpleTests"
-               ReferencedContainer = "container:Purple.xcodeproj">
+               BuildableName = "ScalawagTests.xctest"
+               BlueprintName = "ScalawagTests"
+               ReferencedContainer = "container:Scalawag.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9C6F55A519F2F7F700EC5397"
-               BuildableName = "PurpleTests.xctest"
-               BlueprintName = "PurpleTests"
-               ReferencedContainer = "container:Purple.xcodeproj">
+               BuildableName = "ScalawagTests.xctest"
+               BlueprintName = "ScalawagTests"
+               ReferencedContainer = "container:Scalawag.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C6F558C19F2F7F600EC5397"
-            BuildableName = "Purple.app"
-            BlueprintName = "Purple"
-            ReferencedContainer = "container:Purple.xcodeproj">
+            BuildableName = "Scalawag.app"
+            BlueprintName = "Scalawag"
+            ReferencedContainer = "container:Scalawag.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C6F558C19F2F7F600EC5397"
-            BuildableName = "Purple.app"
-            BlueprintName = "Purple"
-            ReferencedContainer = "container:Purple.xcodeproj">
+            BuildableName = "Scalawag.app"
+            BlueprintName = "Scalawag"
+            ReferencedContainer = "container:Scalawag.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9C6F558C19F2F7F600EC5397"
-            BuildableName = "Purple.app"
-            BlueprintName = "Purple"
-            ReferencedContainer = "container:Purple.xcodeproj">
+            BuildableName = "Scalawag.app"
+            BlueprintName = "Scalawag"
+            ReferencedContainer = "container:Scalawag.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

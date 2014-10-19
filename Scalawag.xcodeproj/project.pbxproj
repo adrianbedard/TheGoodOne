@@ -48,7 +48,7 @@
 		9C670B1A19F3470600F87352 /* Test2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test2VC.h; path = VCs/Test2VC.h; sourceTree = "<group>"; };
 		9C670B1B19F3470600F87352 /* Test2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test2VC.m; path = VCs/Test2VC.m; sourceTree = "<group>"; };
 		9C670B1D19F36AC600F87352 /* Parlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parlay.png; sourceTree = "<group>"; };
-		9C6F558D19F2F7F600EC5397 /* Purple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6F558D19F2F7F600EC5397 /* Scalawag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scalawag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F559119F2F7F600EC5397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6F559219F2F7F600EC5397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C6F559419F2F7F600EC5397 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		9C6F559B19F2F7F600EC5397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C6F559D19F2F7F600EC5397 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9C6F55A019F2F7F600EC5397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9C6F55A619F2F7F700EC5397 /* PurpleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PurpleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C6F55A619F2F7F700EC5397 /* ScalawagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalawagTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F55AB19F2F7F700EC5397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6F55AC19F2F7F700EC5397 /* PurpleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PurpleTests.m; sourceTree = "<group>"; };
 		9C6F55EB19F310CA00EC5397 /* LoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoadingVC.h; path = VCs/LoadingVC.h; sourceTree = "<group>"; };
@@ -320,8 +320,8 @@
 		9C6F558E19F2F7F600EC5397 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9C6F558D19F2F7F600EC5397 /* Purple.app */,
-				9C6F55A619F2F7F700EC5397 /* PurpleTests.xctest */,
+				9C6F558D19F2F7F600EC5397 /* Scalawag.app */,
+				9C6F55A619F2F7F700EC5397 /* ScalawagTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -716,9 +716,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9C6F558C19F2F7F600EC5397 /* Purple */ = {
+		9C6F558C19F2F7F600EC5397 /* Scalawag */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C6F55B019F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "Purple" */;
+			buildConfigurationList = 9C6F55B019F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "Scalawag" */;
 			buildPhases = (
 				5113D5EE7C65453551FA36C3 /* Check Pods Manifest.lock */,
 				9C6F558919F2F7F600EC5397 /* Sources */,
@@ -730,14 +730,14 @@
 			);
 			dependencies = (
 			);
-			name = Purple;
+			name = Scalawag;
 			productName = Purple;
-			productReference = 9C6F558D19F2F7F600EC5397 /* Purple.app */;
+			productReference = 9C6F558D19F2F7F600EC5397 /* Scalawag.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9C6F55A519F2F7F700EC5397 /* PurpleTests */ = {
+		9C6F55A519F2F7F700EC5397 /* ScalawagTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9C6F55B319F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "PurpleTests" */;
+			buildConfigurationList = 9C6F55B319F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "ScalawagTests" */;
 			buildPhases = (
 				9C6F55A219F2F7F700EC5397 /* Sources */,
 				9C6F55A319F2F7F700EC5397 /* Frameworks */,
@@ -748,9 +748,9 @@
 			dependencies = (
 				9C6F55A819F2F7F700EC5397 /* PBXTargetDependency */,
 			);
-			name = PurpleTests;
+			name = ScalawagTests;
 			productName = PurpleTests;
-			productReference = 9C6F55A619F2F7F700EC5397 /* PurpleTests.xctest */;
+			productReference = 9C6F55A619F2F7F700EC5397 /* ScalawagTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -772,7 +772,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9C6F558819F2F7F600EC5397 /* Build configuration list for PBXProject "Purple" */;
+			buildConfigurationList = 9C6F558819F2F7F600EC5397 /* Build configuration list for PBXProject "Scalawag" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -785,8 +785,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9C6F558C19F2F7F600EC5397 /* Purple */,
-				9C6F55A519F2F7F700EC5397 /* PurpleTests */,
+				9C6F558C19F2F7F600EC5397 /* Scalawag */,
+				9C6F55A519F2F7F700EC5397 /* ScalawagTests */,
 			);
 		};
 /* End PBXProject section */
@@ -875,7 +875,7 @@
 /* Begin PBXTargetDependency section */
 		9C6F55A819F2F7F700EC5397 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9C6F558C19F2F7F600EC5397 /* Purple */;
+			target = 9C6F558C19F2F7F600EC5397 /* Scalawag */;
 			targetProxy = 9C6F55A719F2F7F700EC5397 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -938,7 +938,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE = "93f320ee-ebbb-474a-bdbb-8c75d4a0f85a";
+				PROVISIONING_PROFILE = "0589dd7f-5a6c-4fb6-9e1c-268a55937613";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -974,7 +974,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PROVISIONING_PROFILE = "93f320ee-ebbb-474a-bdbb-8c75d4a0f85a";
+				PROVISIONING_PROFILE = "0589dd7f-5a6c-4fb6-9e1c-268a55937613";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -989,7 +989,7 @@
 				INFOPLIST_FILE = Purple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Scalawag;
 			};
 			name = Debug;
 		};
@@ -1002,7 +1002,7 @@
 				INFOPLIST_FILE = Purple/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Scalawag;
 			};
 			name = Release;
 		};
@@ -1022,7 +1022,7 @@
 				);
 				INFOPLIST_FILE = PurpleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ScalawagTests;
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Purple.app/Purple";
 			};
@@ -1040,7 +1040,7 @@
 				);
 				INFOPLIST_FILE = PurpleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ScalawagTests;
 				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Purple.app/Purple";
 			};
@@ -1049,7 +1049,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9C6F558819F2F7F600EC5397 /* Build configuration list for PBXProject "Purple" */ = {
+		9C6F558819F2F7F600EC5397 /* Build configuration list for PBXProject "Scalawag" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C6F55AE19F2F7F700EC5397 /* Debug */,
@@ -1058,7 +1058,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C6F55B019F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "Purple" */ = {
+		9C6F55B019F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "Scalawag" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C6F55B119F2F7F700EC5397 /* Debug */,
@@ -1067,7 +1067,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9C6F55B319F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "PurpleTests" */ = {
+		9C6F55B319F2F7F700EC5397 /* Build configuration list for PBXNativeTarget "ScalawagTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9C6F55B419F2F7F700EC5397 /* Debug */,
