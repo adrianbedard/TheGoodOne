@@ -7,9 +7,13 @@
 //
 
 #import "Test2VC.h"
+/*
 
 
 @interface Test2VC ()
+{
+	id<SINClient> _client;
+}
 
 @end
 
@@ -25,6 +29,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+	if([segue.identifier isEqualToString:@"showCallScreen"])
+		{
+		Test2VC *vc = [segue destinationViewController];
+		vc.username = sender;
+		}
+}
 /*
 #pragma mark - Navigation
 
@@ -35,4 +46,19 @@
 }
 */
 
+/*-(void)initSinchClient{
+	_client = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
+						  applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
+							environmentHost:@"sandbox.sinch.com"
+									 userId:@"<userid>"];
+	_client.delegate = self;
+
+	[sinchClient setSupportCalling:YES];
+	[sinchClient setSupportActiveConnectionInBackground:YES];
+		[sinchClient start];
+	[sinchClient startListeningOnActiveConnection];
+
+}
+
 @end
+*/

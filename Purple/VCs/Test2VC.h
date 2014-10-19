@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Sinch/Sinch.h>
 
-@interface Test2VC : UIViewController
+@interface Test2VC : UIViewController <SINCallClientDelegate, SINCallDelegate>
 @property NSString* username;
 @end
