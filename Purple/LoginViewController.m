@@ -29,26 +29,31 @@
 {
     [super viewDidLoad];
     
+    //Set up configuration for a channel
     [PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
+
+    //check to see if a channel has already been created; if not create channel
+    if ([PubNub PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
+    {
+        PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
+    }
+         
+    //subscribe to channel
+    [PubNub subscribeOnChannel:Lobby];
     
-    //at this point connect has been pressed
-    //if a channel does not exist, create it
-    //once u create channel, join it with your unique ID
-    //if a channel does exist, join it with your unique ID
-
-    PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
-
-    //Subscribe to the channel
-    //[PubNub subscribeOnChannel:Lobby];
-
-    //If number of people in channel >= 2
-    //return list of ID sessions
-    //choose first ID != self, remeber that ID
-    //take in other ID as argument to sinch
-    //wait until other process takes in your id
-    //when both ID's have been taken in, queue chat.
-    // Do any additional setup after loading the view.
-    
+    //remember your PubNub ID
+    username = PubNub.getUUID
+         
+    //find a callname in the participants array; remove that from array once paired
+    while (1)
+    {
+        if ([PubNub participants][i] != username)
+        {
+            callname = get uuid.participants[i]
+            remove particpants[i] from q;
+            break;
+        }
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,7 +61,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 
 -(void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
