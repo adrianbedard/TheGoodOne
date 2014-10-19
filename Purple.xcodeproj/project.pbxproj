@@ -93,6 +93,7 @@
 		9C6F558419F2F7F600EC5397 = {
 			isa = PBXGroup;
 			children = (
+				6D00BB6F19F3280C00D47A33 /* Podfile */,
 				9C6F558F19F2F7F600EC5397 /* Purple */,
 				9C6F55A919F2F7F700EC5397 /* PurpleTests */,
 				9C6F558E19F2F7F600EC5397 /* Products */,
@@ -241,6 +242,7 @@
 				9C6F559C19F2F7F600EC5397 /* Main.storyboard in Resources */,
 				9C6F55F219F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif in Resources */,
 				9C6F55A119F2F7F600EC5397 /* LaunchScreen.xib in Resources */,
+				6D00BB7019F3280C00D47A33 /* Podfile in Resources */,
 				9C6F559E19F2F7F600EC5397 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
