@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0EA38FE4F30BC8299F662E46 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FE1D9386EEEE1D56C655E3 /* libPods.a */; };
-		6DDF14CF19F35AE900888DCD /* CallScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF14CE19F35AE900888DCD /* CallScreenViewController.m */; };
-		6DDF14D219F35AF300888DCD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF14D119F35AF300888DCD /* LoginViewController.m */; };
+		6DDF14D519F35F5D00888DCD /* CallScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */; };
+		6DDF14D819F35F6A00888DCD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF14D719F35F6A00888DCD /* LoginViewController.m */; };
 		9C6F559319F2F7F600EC5397 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F559219F2F7F600EC5397 /* main.m */; };
 		9C6F559619F2F7F600EC5397 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F559519F2F7F600EC5397 /* AppDelegate.m */; };
 		9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F559819F2F7F600EC5397 /* ViewController.m */; };
@@ -35,10 +35,10 @@
 /* Begin PBXFileReference section */
 		2D567733709837B8402A3632 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		66FE1D9386EEEE1D56C655E3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6DDF14CD19F35AE900888DCD /* CallScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CallScreenViewController.h; path = "../../../Downloads/ios-simple-voice-app-tutorial-master/CallingApp/CallScreenViewController.h"; sourceTree = "<group>"; };
-		6DDF14CE19F35AE900888DCD /* CallScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CallScreenViewController.m; path = "../../../Downloads/ios-simple-voice-app-tutorial-master/CallingApp/CallScreenViewController.m"; sourceTree = "<group>"; };
-		6DDF14D019F35AF300888DCD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "../../../Downloads/ios-simple-voice-app-tutorial-master/CallingApp/LoginViewController.h"; sourceTree = "<group>"; };
-		6DDF14D119F35AF300888DCD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "../../../Downloads/ios-simple-voice-app-tutorial-master/CallingApp/LoginViewController.m"; sourceTree = "<group>"; };
+		6DDF14D319F35F5D00888DCD /* CallScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallScreenViewController.h; sourceTree = "<group>"; };
+		6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallScreenViewController.m; sourceTree = "<group>"; };
+		6DDF14D619F35F6A00888DCD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		6DDF14D719F35F6A00888DCD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		98865B3252F99C7C8EA0AA30 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C670B1719F3457700F87352 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestVC.h; path = VCs/TestVC.h; sourceTree = "<group>"; };
 		9C670B1819F3457700F87352 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestVC.m; path = VCs/TestVC.m; sourceTree = "<group>"; };
@@ -123,10 +123,10 @@
 		9C6F558F19F2F7F600EC5397 /* Purple */ = {
 			isa = PBXGroup;
 			children = (
-				6DDF14CD19F35AE900888DCD /* CallScreenViewController.h */,
-				6DDF14CE19F35AE900888DCD /* CallScreenViewController.m */,
-				6DDF14D019F35AF300888DCD /* LoginViewController.h */,
-				6DDF14D119F35AF300888DCD /* LoginViewController.m */,
+				6DDF14D319F35F5D00888DCD /* CallScreenViewController.h */,
+				6DDF14D619F35F6A00888DCD /* LoginViewController.h */,
+				6DDF14D719F35F6A00888DCD /* LoginViewController.m */,
+				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				9C6F559419F2F7F600EC5397 /* AppDelegate.h */,
 				9C6F559519F2F7F600EC5397 /* AppDelegate.m */,
 				9C6F559719F2F7F600EC5397 /* ViewController.h */,
@@ -314,8 +314,8 @@
 				9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */,
 				9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */,
 				9C6F559619F2F7F600EC5397 /* AppDelegate.m in Sources */,
-				6DDF14D219F35AF300888DCD /* LoginViewController.m in Sources */,
-				6DDF14CF19F35AE900888DCD /* CallScreenViewController.m in Sources */,
+				6DDF14D819F35F6A00888DCD /* LoginViewController.m in Sources */,
+				6DDF14D519F35F5D00888DCD /* CallScreenViewController.m in Sources */,
 				9C6F559319F2F7F600EC5397 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
