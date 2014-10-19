@@ -124,9 +124,9 @@
 			isa = PBXGroup;
 			children = (
 				6DDF14D319F35F5D00888DCD /* CallScreenViewController.h */,
+				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				6DDF14D619F35F6A00888DCD /* LoginViewController.h */,
 				6DDF14D719F35F6A00888DCD /* LoginViewController.m */,
-				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				9C6F559419F2F7F600EC5397 /* AppDelegate.h */,
 				9C6F559519F2F7F600EC5397 /* AppDelegate.m */,
 				9C6F559719F2F7F600EC5397 /* ViewController.h */,
