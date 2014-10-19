@@ -30,13 +30,13 @@
 {
     [super viewDidLoad];
     
-    isInCall = NO;
-    
+  //  isInCall = NO;
+  /*
     //Set up configuration for a channel
     [PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
 
     //check to see if a channel has already been created; if not create channel
-    if ([PubNub PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
+	//if ([PubNub PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
     {
         PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
     }
@@ -86,5 +86,6 @@
         [self performSegueWithIdentifier:@"showCallScreen" sender:username.text];
 	}
 }*/
+}
 
 @end

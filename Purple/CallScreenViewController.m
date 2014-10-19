@@ -65,7 +65,7 @@
     [_client setSupportCalling:YES];
     [_client start];
     [_client startListeningOnActiveConnection];
-    isInCall = YES;
+		//isInCall = YES;
 }
 /*
 #pragma mark - Navigation
