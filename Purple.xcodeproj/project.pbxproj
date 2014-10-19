@@ -40,6 +40,10 @@
 		6DDF14D019F35AF300888DCD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "../../../Downloads/ios-simple-voice-app-tutorial-master/CallingApp/LoginViewController.h"; sourceTree = "<group>"; };
 		6DDF14D119F35AF300888DCD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "../../../Downloads/ios-simple-voice-app-tutorial-master/CallingApp/LoginViewController.m"; sourceTree = "<group>"; };
 		98865B3252F99C7C8EA0AA30 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9C670B1719F3457700F87352 /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestVC.h; path = VCs/TestVC.h; sourceTree = "<group>"; };
+		9C670B1819F3457700F87352 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestVC.m; path = VCs/TestVC.m; sourceTree = "<group>"; };
+		9C670B1A19F3470600F87352 /* Test2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test2VC.h; path = VCs/Test2VC.h; sourceTree = "<group>"; };
+		9C670B1B19F3470600F87352 /* Test2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test2VC.m; path = VCs/Test2VC.m; sourceTree = "<group>"; };
 		9C6F558D19F2F7F600EC5397 /* Purple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F559119F2F7F600EC5397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6F559219F2F7F600EC5397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,6 +136,10 @@
 				9C6F55EE19F3111800EC5397 /* TalkingVC.h */,
 				9C6F55EF19F3111800EC5397 /* TalkingVC.m */,
 				9C6F559A19F2F7F600EC5397 /* Main.storyboard */,
+				9C670B1A19F3470600F87352 /* Test2VC.h */,
+				9C670B1B19F3470600F87352 /* Test2VC.m */,
+				9C670B1719F3457700F87352 /* TestVC.h */,
+				9C670B1819F3457700F87352 /* TestVC.m */,
 				9C6F55F119F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif */,
 				9C6F559D19F2F7F600EC5397 /* Images.xcassets */,
 				9C6F559F19F2F7F600EC5397 /* LaunchScreen.xib */,
@@ -302,6 +310,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C670B1919F3457700F87352 /* TestVC.m in Sources */,
+				9C670B1C19F3470600F87352 /* Test2VC.m in Sources */,
 				9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */,
 				9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */,
 				9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */,
