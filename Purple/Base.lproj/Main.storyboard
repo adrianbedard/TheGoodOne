@@ -3,6 +3,7 @@
     <dependencies>
         <deployment version="2048" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-kP-hlp">
+                            <segmentedControl opaque="NO" contentMode="center" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6yc-kP-hlp">
                                 <rect key="frame" x="43" y="170" width="288" height="29"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="Fvs-hK-GgW"/>
@@ -33,7 +34,26 @@
                                     <action selector="voiceModifier:" destination="vXZ-lx-hvc" eventType="valueChanged" id="8bx-cU-YI6"/>
                                 </connections>
                             </segmentedControl>
-                            <button opaque="NO" contentMode="bottom" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNL-Rn-E5e">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Name Black" translatesAutoresizingMaskIntoConstraints="NO" id="rpA-B3-HBq">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="316" id="QW3-pl-XNj"/>
+                                    <constraint firstAttribute="height" constant="200" id="eDM-NN-cN3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="QW3-pl-XNj"/>
+                                        <exclude reference="eDM-NN-cN3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="QW3-pl-XNj"/>
+                                        <include reference="eDM-NN-cN3"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="bottom" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNL-Rn-E5e">
                                 <rect key="frame" x="43" y="270" width="288" height="270"/>
                                 <color key="backgroundColor" red="0.96078431372549022" green="0.93333333333333335" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -45,6 +65,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="122" y="380" width="131" height="66"/>
+                                </variation>
                                 <connections>
                                     <action selector="connect:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qsw-9m-XLv"/>
                                     <segue destination="wyG-rZ-HK0" kind="presentation" animates="NO" id="C6h-ZJ-X3E"/>
@@ -56,12 +79,31 @@
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="6yc-kP-hlp" secondAttribute="centerX" id="2R6-ET-sFQ"/>
                             <constraint firstItem="RNL-Rn-E5e" firstAttribute="top" secondItem="6yc-kP-hlp" secondAttribute="bottom" constant="72" id="Efc-tl-khU"/>
+                            <constraint firstItem="6yc-kP-hlp" firstAttribute="top" secondItem="UU2-3x-tOp" secondAttribute="bottom" constant="150" id="RDk-ge-8Qt"/>
                             <constraint firstAttribute="centerX" secondItem="RNL-Rn-E5e" secondAttribute="centerX" id="cXE-jV-oJM"/>
+                            <constraint firstItem="rpA-B3-HBq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="mgS-0l-DMJ"/>
+                            <constraint firstAttribute="centerX" secondItem="rpA-B3-HBq" secondAttribute="centerX" id="xPc-MW-gyT"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="rpA-B3-HBq"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="mgS-0l-DMJ"/>
+                                <exclude reference="xPc-MW-gyT"/>
+                                <exclude reference="RDk-ge-8Qt"/>
+                            </mask>
+                        </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="6yc-kP-hlp"/>
+                                <include reference="rpA-B3-HBq"/>
                                 <include reference="RNL-Rn-E5e"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="mgS-0l-DMJ"/>
+                                <include reference="xPc-MW-gyT"/>
+                                <include reference="RDk-ge-8Qt"/>
                             </mask>
                         </variation>
                     </view>
@@ -70,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="410.5" y="-8.5"/>
+            <point key="canvasLocation" x="410.25" y="-8.5"/>
         </scene>
         <!--LoadingVC-->
         <scene sceneID="vBB-uL-SLX">
@@ -134,7 +176,8 @@
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.68193197510000003" green="0.52541083820000001" blue="0.16905029229999999" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.54458736190000001" green="0.1162894537" blue="0.2261874794" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="C9F-Nt-XX9" secondAttribute="centerY" id="9Ae-DS-PPx"/>
                             <constraint firstAttribute="centerX" secondItem="Tt1-MS-FVP" secondAttribute="centerX" id="AG9-Vd-Bkq"/>
@@ -207,22 +250,39 @@
                                     <segue destination="wyG-rZ-HK0" kind="presentation" identifier="BackToLoad" animates="NO" id="EY9-v9-eax"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5we-wr-Lbj">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5we-wr-Lbj">
                                 <rect key="frame" x="138" y="541" width="98" height="30"/>
-                                <state key="normal" title="Abandon Ship">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="Wb3-Wg-8NE"/>
+                                    <constraint firstAttribute="width" constant="310" id="zr7-gE-zEI"/>
+                                </constraints>
+                                <state key="normal" title="Abandon Ship" image="Abandon Ship">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Wb3-Wg-8NE"/>
+                                        <exclude reference="zr7-gE-zEI"/>
+                                    </mask>
+                                </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="138" y="538" width="98" height="30"/>
+                                    <rect key="frame" x="-83" y="339" width="620" height="360"/>
+                                    <mask key="constraints">
+                                        <include reference="Wb3-Wg-8NE"/>
+                                        <include reference="zr7-gE-zEI"/>
+                                    </mask>
                                 </variation>
                                 <connections>
                                     <segue destination="vXZ-lx-hvc" kind="presentation" animates="NO" id="qzc-pr-MdH"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.68193197510000003" green="0.52541083820000001" blue="0.16905029229999999" alpha="0.81000000000000005" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.54458736190000001" green="0.1162894537" blue="0.2261874794" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="jan-v5-GpQ" secondAttribute="trailing" constant="-6" id="G3K-Df-mKf"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="5we-wr-Lbj" secondAttribute="bottom" constant="10" id="Ijw-vp-mI7"/>
+                            <constraint firstAttribute="centerX" secondItem="5we-wr-Lbj" secondAttribute="centerX" id="Ouc-JQ-keY"/>
                             <constraint firstAttribute="centerX" secondItem="5we-wr-Lbj" secondAttribute="centerX" id="QEd-09-d0o"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jan-v5-GpQ" secondAttribute="trailing" constant="8" id="RIS-QA-I5G"/>
                             <constraint firstItem="jan-v5-GpQ" firstAttribute="leading" secondItem="uhV-2n-V62" secondAttribute="trailing" constant="8" id="YtY-S7-z4X"/>
@@ -232,6 +292,20 @@
                             <constraint firstItem="uhV-2n-V62" firstAttribute="top" secondItem="Qdc-eO-gqf" secondAttribute="bottom" constant="13" id="rbC-rh-EDa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jan-v5-GpQ" secondAttribute="trailing" constant="-6" id="vxd-JY-ssK"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ijw-vp-mI7"/>
+                                <exclude reference="Ouc-JQ-keY"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="Ijw-vp-mI7"/>
+                                <include reference="Ouc-JQ-keY"/>
+                                <exclude reference="QEd-09-d0o"/>
+                                <exclude reference="fWR-uX-WKZ"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="countdownLabel" destination="jan-v5-GpQ" id="3rp-ZK-CjZ"/>
@@ -239,9 +313,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KjY-QF-qEp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="831.5" y="813.5"/>
+            <point key="canvasLocation" x="830.25" y="813.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Abandon Ship" width="504" height="360"/>
+        <image name="App Name Black" width="504" height="360"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C6h-ZJ-X3E"/>
         <segue reference="qzc-pr-MdH"/>
