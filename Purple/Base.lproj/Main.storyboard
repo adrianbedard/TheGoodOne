@@ -123,6 +123,7 @@
                         <viewControllerLayoutGuide type="bottom" id="f7T-ym-L39"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KrX-F3-OwU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pancake ID:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lHU-Ed-LjS">
@@ -189,6 +190,7 @@
                         <viewControllerLayoutGuide type="bottom" id="SoP-IG-OVK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="DK2-rI-9Na">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To call" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XeT-gR-FEG">
