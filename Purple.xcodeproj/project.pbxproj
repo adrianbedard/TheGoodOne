@@ -44,6 +44,7 @@
 		9C670B1819F3457700F87352 /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestVC.m; path = VCs/TestVC.m; sourceTree = "<group>"; };
 		9C670B1A19F3470600F87352 /* Test2VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Test2VC.h; path = VCs/Test2VC.h; sourceTree = "<group>"; };
 		9C670B1B19F3470600F87352 /* Test2VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Test2VC.m; path = VCs/Test2VC.m; sourceTree = "<group>"; };
+		9C670B1D19F36AC600F87352 /* Parlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Parlay.png; sourceTree = "<group>"; };
 		9C6F558D19F2F7F600EC5397 /* Purple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Purple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6F559119F2F7F600EC5397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C6F559219F2F7F600EC5397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -124,9 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				6DDF14D319F35F5D00888DCD /* CallScreenViewController.h */,
+				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				6DDF14D619F35F6A00888DCD /* LoginViewController.h */,
 				6DDF14D719F35F6A00888DCD /* LoginViewController.m */,
-				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				9C6F559419F2F7F600EC5397 /* AppDelegate.h */,
 				9C6F559519F2F7F600EC5397 /* AppDelegate.m */,
 				9C6F559719F2F7F600EC5397 /* ViewController.h */,
@@ -142,6 +143,7 @@
 				9C670B1819F3457700F87352 /* TestVC.m */,
 				9C6F55F119F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif */,
 				9C6F559D19F2F7F600EC5397 /* Images.xcassets */,
+				9C670B1D19F36AC600F87352 /* Parlay.png */,
 				9C6F559F19F2F7F600EC5397 /* LaunchScreen.xib */,
 				9C6F559019F2F7F600EC5397 /* Supporting Files */,
 			);
@@ -259,6 +261,7 @@
 				9C6F559C19F2F7F600EC5397 /* Main.storyboard in Resources */,
 				9C6F55F219F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif in Resources */,
 				9C6F55A119F2F7F600EC5397 /* LaunchScreen.xib in Resources */,
+				9C670B1E19F36AC600F87352 /* Parlay.png in Resources */,
 				9C6F559E19F2F7F600EC5397 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

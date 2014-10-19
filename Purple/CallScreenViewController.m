@@ -7,11 +7,13 @@
 //
 
 #import "CallScreenViewController.h"
+#
 
 @interface CallScreenViewController ()
 {
     id<SINClient> _client;
     id<SINCall> _call;
+    
 }
 @end
 
@@ -40,8 +42,17 @@
     // Dispose of any resources that can be recreated.
 }
 
++(NSString*)generateRandomString:(int)num {
+    NSMutableString* string = [NSMutableString stringWithCapacity:num];
+    for (int i = 0; i < num; i++) {
+        [string appendFormat:@"%C", (unichar)('a' + arc4random_uniform(25))];
+    }
+    return string;
+}
+
 - (void)initSinchClient {
-    _client = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
+    NSString *key = @"d";
+    _client = [Sinch clientWithApplicationKey:key
                             applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
                               environmentHost:@"sandbox.sinch.com"
                                        userId:self.username];
