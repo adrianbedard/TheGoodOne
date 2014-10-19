@@ -310,8 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C670B1919F3457700F87352 /* TestVC.m in Sources */,
-				9C670B1C19F3470600F87352 /* Test2VC.m in Sources */,
 				9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */,
 				9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */,
 				9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */,
