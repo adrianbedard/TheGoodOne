@@ -63,11 +63,12 @@
 	if (secondsCount == 0) {
 		[countdownTimer invalidate];
 		countdownTimer = nil;
+		[self performSegueWithIdentifier:@"BackToLoad" sender:self];
 	}
 }
 
 -(void) setTimer {
-	secondsCount = 90;
+	secondsCount = 5;
 	countdownTimer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerRun) userInfo:nil repeats:YES];
 }
 /*
