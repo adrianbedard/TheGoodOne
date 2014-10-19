@@ -35,7 +35,7 @@
     [super viewDidLoad];
     
   //  isInCall = NO;
-  /*
+	
     //Set up configuration for a channel
     [PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
     [PubNub connect];
@@ -101,7 +101,7 @@
     if (username.text != nil ) {
         [self performSegueWithIdentifier:@"showCallScreen" sender:username.text];
 	}
-}*/
 }
+*/
 
 @end
