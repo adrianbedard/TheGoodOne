@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <Sinch/Sinch.h>
 
-@interface CallScreenViewController : UIViewController <SINCallClientDelegate, SINCallDelegate>
+@interface CallScreenViewController : UIViewController <SINClientDelegate, SINCallClientDelegate, SINCallDelegate>
 {
 	
 IBOutlet UILabel *countdownLabel;

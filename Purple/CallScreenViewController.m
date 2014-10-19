@@ -33,10 +33,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	username = [self generateRandomString:20];
-	callname = [self generateRandomString:20];
-	[self setTimer];
+		//username = [self generateRandomString:20];
+		//callname = [self generateRandomString:20];
+	
     [self initSinchClient];
+	
+	
     // Do any additional setup after loading the view.
 }
 
@@ -59,8 +61,9 @@
     _client = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
                             applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
                               environmentHost:@"sandbox.sinch.com"
-                                       userId:self.username];
-    
+                                       userId:username];
+	
+	_client.delegate = self;
     _client.callClient.delegate = self;
     [_client setSupportCalling:YES];
     [_client start];
@@ -77,7 +80,7 @@
     // Pass the selected object to the new view controller.
 }
 */
-
+/*
 - (IBAction)callUser:(id)sender {
     if (_call == nil)
     {
@@ -89,6 +92,36 @@
         [_call hangup];
         _call = nil;
     }
+}
+*/
+
+
+-(void)clientDidStart:(id<SINClient>)client{
+	[self callUser:callname];
+}
+-(void)callUser:(id)sender{
+	/*if (_call == nil)
+		{
+		_call = [_client.callClient callUserWithId:callname];
+		_call.delegate = self;
+		}
+	else
+		{
+		[_call hangup];
+		_call = nil;
+		}
+	 */
+	NSLog(@"hope");
+	
+	NSComparisonResult result = [username compare:callname];
+	
+	if (result == NSOrderedDescending) // stringOne > stringTwo
+		{
+		NSLog(@"attempt %@", callname);
+		_call = [_client.callClient callUserWithId:callname];
+		_call.delegate = self;
+		}
+	
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
@@ -103,6 +136,11 @@
         vc.callname = nil;
         vc.isInCall = NO;
     }
+	
+	[_call hangup];
+	_call = nil;
+	[_client stopListeningOnActiveConnection];
+	[_client terminate];
 }
 
 
@@ -113,6 +151,7 @@
     call.delegate = self;
     [call answer];
     _call = call;
+	NSLog(@"call");
 }
 
 #pragma mark - SINCallDelegate
@@ -124,12 +163,16 @@
 - (void)callDidEstablish:(id<SINCall>)call {
     //Called when a call connects.
 	// [self.callButton setTitle:@"Hang up" forState:UIControlStateNormal];
+	[self setTimer];
 }
 
 - (void)callDidEnd:(id<SINCall>)call {
     //called when call finnished.
     [self.callButton setTitle:@"Call" forState:UIControlStateNormal];
+	[_call hangup];
     _call = nil;
+	[_client stopListeningOnActiveConnection];
+	[_client terminate];
 	callname = nil;
 	username = nil;
 	[self performSegueWithIdentifier:@"BackToLoad" sender:self];
@@ -145,7 +188,10 @@
 	if (secondsCount == 0) {
 		[countdownTimer invalidate];
 		countdownTimer = nil;
+		[_call hangup];
 		_call = nil;
+		[_client stopListeningOnActiveConnection];
+		[_client terminate];
 		callname = nil;
 		username = nil;
 		[self performSegueWithIdentifier:@"BackToLoad" sender:self];

@@ -30,6 +30,7 @@
     return self;
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -56,7 +57,7 @@
     //NSLog(@"%@\n", Lobby.participants[0]);
 
     int i;
-    while (1)
+   /* while (1)
     {
         sleep(.05);
         if (isInCall == YES)
@@ -74,6 +75,7 @@
             }
         }
     }
+	*/
 }
 
 -(void)didReceiveMemoryWarning
@@ -90,11 +92,33 @@
         // Get destination viewController
         CallScreenViewController *vc = [segue destinationViewController];
         // set the username property of CallScreenViewController
-        vc.username = self.username;
+		vc.username = self.username;
         vc.callname = self.callname;
         vc.isInCall2 = self.isInCall;
         
     }
+	
+	if ([segue.identifier isEqualToString:@"ninjaZeta"])
+		{
+			// Get destination viewController
+		CallScreenViewController *vc = [segue destinationViewController];
+			// set the username property of CallScreenViewController
+		vc.username = @"Bacon";
+		vc.callname = @"Alcohol";
+		vc.isInCall2 = NO;
+		
+		}
+	
+	if ([segue.identifier isEqualToString:@"ninjaAlpha"])
+		{
+			// Get destination viewController
+		CallScreenViewController *vc = [segue destinationViewController];
+			// set the username property of CallScreenViewController
+		vc.username = @"Alcohol";
+		vc.callname = @"Bacon";
+		vc.isInCall2 = NO;
+		
+		}
 }
 
 /*-(IBAction)login:(id)sender {
