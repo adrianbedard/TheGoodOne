@@ -7,7 +7,7 @@
 //
 
 #import "CallScreenViewController.h"
-#
+#import "LoginViewController.h"
 
 @interface CallScreenViewController ()
 {
@@ -63,6 +63,7 @@
     [_client setSupportCalling:YES];
     [_client start];
     [_client startListeningOnActiveConnection];
+    isInCall = YES;
 }
 /*
 #pragma mark - Navigation

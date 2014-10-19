@@ -9,13 +9,14 @@
 #import "LoginViewController.h"
 #import "PNImports.h"
 #import "PNMessage+Protected.h"
+#import "CallScreenViewController.h"
 
 @interface LoginViewController ()
 
 @end
 
 @implementation LoginViewController
-@synthesize username, callname;
+@synthesize username, callname, isInCall;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -29,6 +30,8 @@
 {
     [super viewDidLoad];
     
+    isInCall = NO;
+    
     //Set up configuration for a channel
     [PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
 
@@ -40,17 +43,20 @@
          
     //subscribe to channel
     [PubNub subscribeOnChannel:Lobby];
-    
-    //remember your PubNub ID
-    username = PubNub.getUUID
          
-    //find a callname in the participants array; remove that from array once paired
+    //find a callname in the participants array; remove yourself from array once paired
     while (1)
     {
-        if ([PubNub participants][i] != username)
+        sleep(2);
+        if (_call != nil)
         {
-            callname = get uuid.participants[i]
-            remove particpants[i] from q;
+            remover urself from array;
+            break;
+        }
+        if ([PubNub participants][i].username != username)
+        {
+            callname = get participants[i].username;
+            remove urself from array
             break;
         }
     }
@@ -79,6 +85,6 @@
     if (username.text != nil ) {
         [self performSegueWithIdentifier:@"showCallScreen" sender:username.text];
 	}
-}
-*/
+}*/
+
 @end
