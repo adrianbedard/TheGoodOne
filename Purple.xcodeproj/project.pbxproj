@@ -20,7 +20,7 @@
 		9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55EC19F310CA00EC5397 /* LoadingVC.m */; };
 		9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C6F55EF19F3111800EC5397 /* TalkingVC.m */; };
 		9C6F55F219F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9C6F55F119F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif */; };
-		9CAB4E2619F383C900F14B35 /* PNImports.h in Sources */ = {isa = PBXBuildFile; fileRef = 9CAB4E2519F382D500F14B35 /* PNImports.h */; };
+		9CAB4E2619F383C900F14B35 /* (null) in Sources */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -330,7 +330,6 @@
 				6DDF14D319F35F5D00888DCD /* CallScreenViewController.h */,
 				6DDF14D419F35F5D00888DCD /* CallScreenViewController.m */,
 				6DDF14D619F35F6A00888DCD /* LoginViewController.h */,
-				9CAB4E2519F382D500F14B35 /* PNImports.h */,
 				6DDF14D719F35F6A00888DCD /* LoginViewController.m */,
 				9C6F559419F2F7F600EC5397 /* AppDelegate.h */,
 				9C6F559519F2F7F600EC5397 /* AppDelegate.m */,
@@ -765,6 +764,7 @@
 					};
 					9C6F55A519F2F7F700EC5397 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = JP7JGNH77T;
 						TestTargetID = 9C6F558C19F2F7F600EC5397;
 					};
 				};
@@ -797,7 +797,6 @@
 				9C6F55F219F32E4B00EC5397 /* picasion.com_eb8093563732c35145a5dfd6739af5e6.gif in Resources */,
 				9C6F55A119F2F7F600EC5397 /* LaunchScreen.xib in Resources */,
 				9C6F559E19F2F7F600EC5397 /* Images.xcassets in Resources */,
-				FBF97A1319F383B000E03123 /* PNLoggerSymbols.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -848,88 +847,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CAB4E2619F383C900F14B35 /* PNImports.h in Sources */,
+				9CAB4E2619F383C900F14B35 /* (null) in Sources */,
 				9C6F559919F2F7F600EC5397 /* ViewController.m in Sources */,
-				FBF97A0019F383B000E03123 /* PNClientStateUpdateRequest.m in Sources */,
-				FBF97A0B19F383B000E03123 /* PNTimeTokenRequest.m in Sources */,
 				9C6F55F019F3111800EC5397 /* TalkingVC.m in Sources */,
-				FBF979DD19F383B000E03123 /* PNWhereNowResponseParser.m in Sources */,
-				FBF979F419F383B000E03123 /* NSInvocation+PNAdditions.m in Sources */,
-				FBF979D219F383B000E03123 /* PNChannelEventsResponseParser.m in Sources */,
-				FBF97A1119F383B000E03123 /* PNConnection.m in Sources */,
-				FBF97A0119F383B000E03123 /* PNHeartbeatRequest.m in Sources */,
 				9C6F55ED19F310CA00EC5397 /* LoadingVC.m in Sources */,
-				FBF97A0619F383B000E03123 /* PNMessagePostRequest.m in Sources */,
-				FBF979C919F383B000E03123 /* PNObservationCenter.m in Sources */,
-				FBF979DB19F383B000E03123 /* PNResponseParser.m in Sources */,
-				FBF979CE19F383B000E03123 /* PNPresenceEvent.m in Sources */,
-				FBF97A0419F383B000E03123 /* PNLeaveRequest.m in Sources */,
-				FBF979DF19F383B000E03123 /* PNAccessRightsCollection.m in Sources */,
-				FBF979DA19F383B000E03123 /* PNResponseDeserialize.m in Sources */,
-				FBF979D819F383B000E03123 /* PNOperationStatusResponseParser.m in Sources */,
-				FBF979EC19F383B000E03123 /* PNRequestsQueue.m in Sources */,
-				FBF979FA19F383B000E03123 /* PNHelper.m in Sources */,
-				FBF979E619F383B000E03123 /* PNError.m in Sources */,
-				FBF97A0519F383B000E03123 /* PNMessageHistoryRequest.m in Sources */,
-				FBF979FC19F383B000E03123 /* PNAccessRightsAuditRequest.m in Sources */,
 				9C6F559619F2F7F600EC5397 /* AppDelegate.m in Sources */,
-				FBF979F719F383B000E03123 /* NSSet+PNAdditions.m in Sources */,
-				FBF979EF19F383B000E03123 /* NSArray+PNAdditions.m in Sources */,
-				FBF979E019F383B000E03123 /* PNAccessRightsInformation.m in Sources */,
-				FBF979FB19F383B000E03123 /* PNLogger.m in Sources */,
-				FBF979CB19F383B000E03123 /* PNWriteBuffer.m in Sources */,
-				FBF979D919F383B000E03123 /* PNPushNotificationsEnabledChannelsParser.m in Sources */,
-				FBF97A1019F383B000E03123 /* PNServiceChannel.m in Sources */,
-				FBF97A0319F383B000E03123 /* PNLatencyMeasureRequest.m in Sources */,
-				FBF979F619F383B000E03123 /* NSMutableSet+PNAdditions.m in Sources */,
-				FBF979DC19F383B000E03123 /* PNTimeTokenResponseParser.m in Sources */,
-				FBF97A0E19F383B000E03123 /* PNNetworkHelper.m in Sources */,
-				FBF979E919F383B000E03123 /* PNMessage.m in Sources */,
-				FBF979CD19F383B000E03123 /* PNChannelPresence.m in Sources */,
-				FBF979DE19F383B000E03123 /* PNAccessRightOptions.m in Sources */,
-				FBF979F119F383B000E03123 /* NSDate+PNAdditions.m in Sources */,
-				FBF97A0D19F383B000E03123 /* PNMessagingChannel.m in Sources */,
-				FBF979D419F383B000E03123 /* PNClientStateResponseParser.m in Sources */,
 				6DDF14D819F35F6A00888DCD /* LoginViewController.m in Sources */,
-				FBF979D019F383B000E03123 /* PNAccessRightsResponseParser.m in Sources */,
-				FBF979F219F383B000E03123 /* NSDictionary+PNAdditions.m in Sources */,
-				FBF979E219F383B000E03123 /* PNChannelEvents.m in Sources */,
-				FBF979CA19F383B000E03123 /* PubNub.m in Sources */,
-				FBF979F919F383B000E03123 /* UIApplication+PNAdditions.m in Sources */,
-				FBF979E119F383B000E03123 /* PNCache.m in Sources */,
-				FBF979D119F383B000E03123 /* PNActionResponseParser.m in Sources */,
-				FBF979EB19F383B000E03123 /* PNOperationStatus.m in Sources */,
-				FBF979D719F383B000E03123 /* PNHereNowResponseParser.m in Sources */,
-				FBF979FE19F383B000E03123 /* PNChangeAccessRightsRequest.m in Sources */,
-				FBF979FD19F383B000E03123 /* PNBaseRequest.m in Sources */,
 				6DDF14D519F35F5D00888DCD /* CallScreenViewController.m in Sources */,
-				FBF979E719F383B000E03123 /* PNHereNow.m in Sources */,
-				FBF97A0819F383B000E03123 /* PNPushNotificationsRemoveRequest.m in Sources */,
-				FBF979ED19F383B000E03123 /* PNResponse.m in Sources */,
-				FBF979D619F383B000E03123 /* PNErrorResponseParser.m in Sources */,
-				FBF979E319F383B000E03123 /* PNClient.m in Sources */,
-				FBF979E419F383B000E03123 /* PNConfiguration.m in Sources */,
-				FBF979CC19F383B000E03123 /* PNChannel.m in Sources */,
-				FBF979F519F383B000E03123 /* NSMutableArray+PNAdditions.m in Sources */,
-				FBF979FF19F383B000E03123 /* PNClientStateRequest.m in Sources */,
-				FBF97A0919F383B000E03123 /* PNPushNotificationsStateChangeRequest.m in Sources */,
-				FBF97A1219F383B000E03123 /* PNConnectionChannel.m in Sources */,
-				FBF979CF19F383B000E03123 /* PNCryptoHelper.m in Sources */,
 				9C6F559319F2F7F600EC5397 /* main.m in Sources */,
-				FBF97A0F19F383B000E03123 /* PNReachability.m in Sources */,
-				FBF979F819F383B000E03123 /* NSString+PNAddition.m in Sources */,
-				FBF979D319F383B000E03123 /* PNChannelHistoryParser.m in Sources */,
-				FBF97A0C19F383B000E03123 /* PNWhereNowRequest.m in Sources */,
-				FBF979EA19F383B000E03123 /* PNMessagesHistory.m in Sources */,
-				FBF979EE19F383B000E03123 /* PNWhereNow.m in Sources */,
-				FBF979D519F383B000E03123 /* PNClientStateUpdateResponseParser.m in Sources */,
-				FBF97A0719F383B000E03123 /* PNPushNotificationsEnabledChannelsRequest.m in Sources */,
-				FBF979F019F383B000E03123 /* NSData+PNAdditions.m in Sources */,
-				FBF979F319F383B000E03123 /* NSError+PNAdditions.m in Sources */,
-				FBF979E519F383B000E03123 /* PNDate.m in Sources */,
-				FBF97A0219F383B000E03123 /* PNHereNowRequest.m in Sources */,
-				FBF97A0A19F383B000E03123 /* PNSubscribeRequest.m in Sources */,
-				FBF979E819F383B000E03123 /* PNJSONSerialization.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1079,6 +1004,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1090,6 +1017,7 @@
 				INFOPLIST_FILE = PurpleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Purple.app/Purple";
 			};
 			name = Debug;
@@ -1098,6 +1026,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -1105,6 +1035,7 @@
 				INFOPLIST_FILE = PurpleTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Purple.app/Purple";
 			};
 			name = Release;
