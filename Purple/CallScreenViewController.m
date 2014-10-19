@@ -18,7 +18,7 @@
 @end
 
 @implementation CallScreenViewController
-@synthesize username, remoteUsername, callButton, callname;
+@synthesize username, remoteUsername, callButton, callname, isInCall2;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
