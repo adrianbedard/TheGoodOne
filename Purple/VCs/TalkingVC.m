@@ -42,8 +42,7 @@
      [sinchClient terminate];
      [sinchClient release]; // unless using ARC
      sinchClient = nil;
-     
-    
+
     */
     [self setTimer];
      
