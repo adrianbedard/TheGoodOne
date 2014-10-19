@@ -18,7 +18,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-	[self setTimer];
+    
+    //Sinch connection here?
+    // Instantiate a Sinch client object
+    /*
+     id<SINClient> sinchClient = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
+     applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
+     environmentHost:@"sandbox.sinch.com"
+     userId:@"<userid>"];
+     [sinchClient setSupportCalling:YES];
+     [sinchClient setSupportActiveConnectionInBackground:YES];
+     sinchClient.delegate = ... ;
+     [sinchClient start];
+     [sinchClient startListeningOnActiveConnection];
+     
+     //stop listening
+     -[SINClient stopListeningOnActiveConnection]
+     
+     
+     
+     id<SINCallClient> callClient = [sinchClient callClient];
+     id<SINCall> call = [callClient callUserWithId:@"<remote user id>"];
+     
+     [sinchClient stopListeningOnActiveConnection];
+     [sinchClient terminate];
+     [sinchClient release]; // unless using ARC
+     sinchClient = nil;
+     
+     */
+    
+    [self setTimer];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -36,34 +65,6 @@
 		[countdownTimer invalidate];
 		countdownTimer = nil;
 	}
-    
-    
-    //Sinch connection here?
-    // Instantiate a Sinch client object
-    /*
-    id<SINClient> sinchClient = [Sinch clientWithApplicationKey:@"1c74e080-f553-4f69-ae89-657fb2ea3ab5"
-                                              applicationSecret:@"V+TXJ9EKZk+7ZXZijXex+g=="
-                                                environmentHost:@"sandbox.sinch.com"
-                                                         userId:@"<userid>"];
-    [sinchClient setSupportCalling:YES];
-    [sinchClient setSupportActiveConnectionInBackground:YES];
-    sinchClient.delegate = ... ;
-    [sinchClient start];
-    [sinchClient startListeningOnActiveConnection];
-     
-     //stop listening
-     -[SINClient stopListeningOnActiveConnection]
-     
-     [sinchClient stopListeningOnActiveConnection];
-     [sinchClient terminate];
-     [sinchClient release]; // unless using ARC
-     sinchClient = nil;
-     
-     
-     
-     */
-
-    
 }
 
 -(void) setTimer {
