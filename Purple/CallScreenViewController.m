@@ -65,7 +65,7 @@
     [_client setSupportCalling:YES];
     [_client start];
     [_client startListeningOnActiveConnection];
-		//isInCall = YES;
+    isInCall2 = YES;
 }
 /*
 #pragma mark - Navigation
@@ -91,12 +91,21 @@
     }
 }
 
-- (IBAction)Exit:(id)sender {
-	_call = nil;
-	callname = nil;
-	username = nil;
-	[self performSegueWithIdentifier:@"ToHome" sender:self];
+-(void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
+    // check that its the right segue
+    if ([segue.identifier isEqualToString:@"BackToLoad"])
+    {
+        
+        // Get destination viewController
+        LoginViewController *vc = [segue destinationViewController];
+        // set the username property of CallScreenViewController
+        vc.username = nil;
+        vc.callname = nil;
+        vc.isInCall = NO;
+    }
 }
+
+
 
 -(void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {
     //for now we are just going to answer calls,

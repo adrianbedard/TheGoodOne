@@ -42,10 +42,11 @@
 
     PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
     //check to see if a channel has already been created; if not create channel
-	//if ([PubNub PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
-    {
-        PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
-    }
+    
+    //if ([PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
+    //{
+    //
+    //}
          
     //subscribe to channel
     [PubNub subscribeOnChannel:Lobby];
