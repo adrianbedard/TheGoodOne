@@ -49,7 +49,13 @@
     [sinchClient setSupportActiveConnectionInBackground:YES];
     sinchClient.delegate = ... ;
     [sinchClient start];
-    [sinchClient startListeningOnActiveConnection];*/
+    [sinchClient startListeningOnActiveConnection];
+     
+     -[SINClient stopListeningOnActiveConnection]
+     
+     
+     
+     */
 
     
 }
