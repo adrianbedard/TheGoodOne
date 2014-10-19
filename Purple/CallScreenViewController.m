@@ -18,7 +18,7 @@
 @end
 
 @implementation CallScreenViewController
-@synthesize username, remoteUsername, callButton, callname;
+@synthesize username, remoteUsername, callButton, callname, isInCall2;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -63,7 +63,7 @@
     [_client setSupportCalling:YES];
     [_client start];
     [_client startListeningOnActiveConnection];
-    isInCall = YES;
+    isInCall2 = YES;
 }
 /*
 #pragma mark - Navigation
@@ -88,6 +88,21 @@
         _call = nil;
     }
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue*)segue sender:(id)sender {
+    // check that its the right segue
+    if ([segue.identifier isEqualToString:@"BackToLoad"])
+    {
+        
+        // Get destination viewController
+        LoginViewController *vc = [segue destinationViewController];
+        // set the username property of CallScreenViewController
+        vc.username = nil;
+        vc.callname = nil;
+        vc.isInCall = NO;
+    }
+}
+
 
 
 -(void)client:(id<SINCallClient>)client didReceiveIncomingCall:(id<SINCall>)call {

@@ -13,10 +13,14 @@
 
 @interface LoginViewController ()
 
+@property (nonatomic, assign) unsigned int participantsCount;
+@property (nonatomic, strong) NSArray *participants;
+
 @end
 
 @implementation LoginViewController
 @synthesize username, callname, isInCall;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -34,35 +38,45 @@
     
     //Set up configuration for a channel
     [PubNub setConfiguration:[PNConfiguration defaultConfiguration]];
+    [PubNub connect];
 
+    PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
     //check to see if a channel has already been created; if not create channel
-    if ([PubNub PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
-    {
-        PNChannel *Lobby = [PNChannel channelWithName:@"MainLobby" shouldObservePresence:YES];
-    }
+    
+    //if ([PNHereNow:[PNChannel channelWithName:@"MainLobby"].participantsCount == 0)
+    //{
+    //
+    //}
          
     //subscribe to channel
     [PubNub subscribeOnChannel:Lobby];
          
     //find a callname in the participants array; remove yourself from array once paired
+    
+    //NSLog(@"%@\n", Lobby.participants[0]);
+
+    int i;
     while (1)
     {
-        sleep(2);
-        if (_call != nil)
+        sleep(.05);
+        if (isInCall == YES)
         {
-            remover urself from array;
+            [PubNub unsubscribeFromChannel:Lobby];
             break;
         }
-        if ([PubNub participants][i].username != username)
+        for (i = 0; i < Lobby.participantsCount ; i++)
         {
-            callname = get participants[i].username;
-            remove urself from array
-            break;
+            if (Lobby.participants[i] != username & isInCall == NO)
+            {
+               // callname = Lobby.participants[i].username;
+                [PubNub unsubscribeFromChannel:Lobby];
+                break;
+            }
         }
     }
 }
 
-- (void)didReceiveMemoryWarning
+-(void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -78,6 +92,8 @@
         // set the username property of CallScreenViewController
         vc.username = self.username;
         vc.callname = self.callname;
+        vc.isInCall2 = self.isInCall;
+        
     }
 }
 

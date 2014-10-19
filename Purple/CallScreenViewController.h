@@ -15,5 +15,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *remoteUsername;
 @property NSString* username;
 @property NSString* callname;
+@property BOOL isInCall2;
 @property (strong, nonatomic) IBOutlet UIButton *callButton;
 @end

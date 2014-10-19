@@ -241,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="829.5" y="-781"/>
         </scene>
-        <!--LoadingVC-->
+        <!--Login View Controller-->
         <scene sceneID="vBB-uL-SLX">
             <objects>
-                <viewController id="wyG-rZ-HK0" customClass="LoadingVC" sceneMemberID="viewController">
+                <viewController id="wyG-rZ-HK0" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NrF-Ga-Q4h"/>
                         <viewControllerLayoutGuide type="bottom" id="AfM-y7-rMc"/>
@@ -449,7 +449,7 @@
         <image name="Parlay.png" width="792" height="648"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C6h-ZJ-X3E"/>
-        <segue reference="qzc-pr-MdH"/>
+        <segue reference="EY9-v9-eax"/>
+        <segue reference="VxS-BR-TEv"/>
     </inferredMetricsTieBreakers>
 </document>
