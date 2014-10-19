@@ -222,7 +222,6 @@
 		FBF9794819F383B000E03123 /* PNJSONSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNJSONSerialization.h; sourceTree = "<group>"; };
 		FBF9794919F383B000E03123 /* PNJSONSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNJSONSerialization.m; sourceTree = "<group>"; };
 		FBF9794A19F383B000E03123 /* PNMessage+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PNMessage+Protected.h"; sourceTree = "<group>"; };
-		FBF9794B19F383B000E03123 /* PNMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNMessage.h; sourceTree = "<group>"; };
 		FBF9794C19F383B000E03123 /* PNMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PNMessage.m; sourceTree = "<group>"; };
 		FBF9794D19F383B000E03123 /* PNMessagesHistory+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PNMessagesHistory+Protected.h"; sourceTree = "<group>"; };
 		FBF9794E19F383B000E03123 /* PNMessagesHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PNMessagesHistory.h; sourceTree = "<group>"; };
@@ -527,7 +526,6 @@
 				FBF9794819F383B000E03123 /* PNJSONSerialization.h */,
 				FBF9794919F383B000E03123 /* PNJSONSerialization.m */,
 				FBF9794A19F383B000E03123 /* PNMessage+Protected.h */,
-				FBF9794B19F383B000E03123 /* PNMessage.h */,
 				FBF9794C19F383B000E03123 /* PNMessage.m */,
 				FBF9794D19F383B000E03123 /* PNMessagesHistory+Protected.h */,
 				FBF9794E19F383B000E03123 /* PNMessagesHistory.h */,

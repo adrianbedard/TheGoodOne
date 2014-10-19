@@ -59,7 +59,7 @@
 //wait until other process takes in your id
 //when both ID's have been taken in, queue chat.
 
-+(NSString*)generateRandomString:(int)num {
+-(NSString*)generateRandomString:(int)num {
     NSMutableString* string = [NSMutableString stringWithCapacity:num];
     for (int i = 0; i < num; i++) {
         [string appendFormat:@"%C", (unichar)('a' + arc4random_uniform(25))];
